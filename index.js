@@ -39,11 +39,13 @@ let legend = {
     
     
 }
+var audio = new Audio('click_1.mp3');
 
 cb = Math.floor(Math.random() * 31);
 let avslojad = false;
 
 function next() {
+    
     cb = Math.floor(Math.random() * 31);
     let random = -269 - cb * 45;
     avslojad = false;
@@ -58,7 +60,17 @@ function check() {
     console.log(cb);
     if (legend[cb].includes(document.getElementById("input").value)) {
         if (!avslojad) {correct();}
+        audio.play();
+        document.getElementById("input").style.transition="background-color 0s";
+        document.getElementById("input").style.backgroundColor="lightgreen";
+        setTimeout(function(){document.getElementById("input").style.transition="background-color 500ms";
+    document.getElementById("input").style.backgroundColor="white";}, 100);
+        
+        
         next()
+        
+        
+
         document.getElementById("input").value = "";
     }
 
