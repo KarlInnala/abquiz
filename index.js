@@ -57,14 +57,15 @@ try {antalratt = localStorage.getItem("antalratt");
 }
 catch {}
 function check() {
-    console.log(cb);
+    
     if (legend[cb].includes(document.getElementById("input").value)) {
-        if (!avslojad) {correct();}
         audio.play();
+        if (!avslojad) {correct();}
+        
         document.getElementById("input").style.transition="background-color 0s";
         document.getElementById("input").style.backgroundColor="lightgreen";
         setTimeout(function(){document.getElementById("input").style.transition="background-color 500ms";
-    document.getElementById("input").style.backgroundColor="white";}, 100);
+        document.getElementById("input").style.backgroundColor="white";}, 100);
         
         
         next()

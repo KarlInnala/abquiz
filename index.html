@@ -40,17 +40,23 @@
         font-size: 20px ;
         background-color: white;
         transition: background-color 0s;
+        }
+
+        #master {
+            width:1472px;
+            height: 855px;
 
         }
 
         
 
-        #input::cue
+        
 
     </style>
 </head>
 <body>
-    <div class="key"></div>
+    <div id="master">
+        <div class="key"></div>
     <div style="display: flex;">
         <input id="input" oninput="check()">
         <div class="spektrum antibiotika1"></div>
@@ -64,6 +70,8 @@
     </div>
     
     <label id="antalratt">0</label>
+    </div>
+
 
     <script src="index.js"></script>
 </body>
