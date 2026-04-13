@@ -4,13 +4,13 @@ var r = document.querySelector(':root');
 let antalratt = 0;
 
 let legend = {
-    0 : ["fenoximetylpenicillin", "pcv"],
-    1 : ["bensylpenicillin", "pcg"],
+    0 : ["fenoximetylpenicillin", "pcv", "kåvepenin"],
+    1 : ["bensylpenicillin", "pcg", "bensylpc"],
     2 : ["pivmecillinam"],
     3 : ["amoxicillin", "ampicilin"],
-    4 : ["amoxicillin/klavulansyra"],
+    4 : ["amoxicillin/klavulansyra", "a/k"],
     5 : ["flukloxacillin", "kloxacillin"],
-    6 : ["piperacillin/tazobaktam"],
+    6 : ["piperacillin/tazobaktam", "piptazo", "p/t"],
     7 : ["cefadroxil"],
     8 : ["ceftibuten"],
     9 : ["cefuroxim"],
@@ -31,7 +31,7 @@ let legend = {
     24 : ["trimetoprim"],
     25 : ["trimetoprim/sulfa"],
     26 : ["nitrofurantoin"],
-    27 : ["amikacin", "gentamicin", "tobramycin"],
+    27 : ["amikacin", "gentamicin", "tobramycin", "aminoglykosid"],
     28 : ["vankomycin"],
     29 : ["daptomycin"],
     30 : ["linezolid"]
