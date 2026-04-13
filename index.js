@@ -35,10 +35,16 @@ let legend = {
     28 : ["vankomycin"],
     29 : ["daptomycin"],
     30 : ["linezolid"]
-    
+ 
+}
+
+function rensa () {
+    localStorage.clear();
+    document.getElementById("antalratt").innerHTML = "0";
     
     
 }
+
 var audio = new Audio('click_1.mp3');
 
 cb = Math.floor(Math.random() * 31);
@@ -55,7 +61,7 @@ next()
 try {antalratt = localStorage.getItem("antalratt");
     document.getElementById("antalratt").innerHTML = String(antalratt);
 }
-catch {}
+catch {document.getElementById("antalratt").innerHTML = "0";}
 function check() {
     
     if (legend[cb].includes(document.getElementById("input").value)) {

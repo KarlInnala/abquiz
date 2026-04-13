@@ -57,22 +57,25 @@
     </style>
 </head>
 <body>
+    
     <div id="master">
         <div class="key"></div>
     <div style="display: flex;">
-        <input id="input" oninput="check()">
+        <input id="input" oninput="check()" placeholder=" (endast gemener!)">
         <div class="spektrum antibiotika1"></div>
         
     </div>
     
     <div style="padding: 20px; background-color: rgba(9, 9, 9, 0.106); border-radius: 20px; width: 500px;">
         <div>
-        <button onclick="avsloja()" style="background-color: rgb(172, 66, 66); width: 100px;">Avslöja</button>
-        <button onclick="next()" style= "background-color: rgb(28, 105, 69); width: 100px;">Skippa</button>
+        <button onclick="avsloja()" style="color: white; background-color: rgb(172, 66, 66); width: 100px;">Avslöja</button>
+        <button onclick="next()" style= "color: white; background-color: rgb(28, 105, 69); width: 100px;">Skippa</button>
         <label id="rattsvar"></label>
+        
         </div>
         <div style="margin-top:10px; font-weight: bold; font-size: 40px;">
             <label id="antalratt">0</label> <label>rätt</label>
+            <button onclick="rensa()">Rensa</button>
         </div>
 
         
